@@ -3,6 +3,7 @@
 
 highchart정리 (상세 그래프는 highchart demo검색...)
   1. 동적 데이터 추가
+     
      1)그래프 선언
     
     const chart = Highcharts.chart('container', {
@@ -35,17 +36,17 @@ highchart정리 (상세 그래프는 highchart demo검색...)
             }]
         });
      
-2) series 추가
+   2) series 추가
     
-    chart.addSeries({
-        marker : {
-        	enabled : true,
-          radius : 3
-        },
-        data: [216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5]
-    });
+        chart.addSeries({
+            marker : {
+              enabled : true,
+              radius : 3
+            },
+            data: [216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5]
+        });
     
-3) addPoint
+   3) addPoint
    
-   chart.series[1].addPoint('juu',13);
+        chart.series[1].addPoint('juu',13);
 
