@@ -64,3 +64,41 @@ highchart정리 (상세 그래프는 highchart demo검색...)
     </div>
     </div>
 
+
+동적div에 스크롤 이벤트 추가 하기
+※ onClick 이벤트 안에 scroll 액션을 넣어야 정상작동 된다!
+
+HTML
+
+     <input type="button" id="btn" value="Click"/>
+     
+JavaScript
+
+      $(document).ready(function(){
+          $("#btn").click(function(){
+            if ($(".myDiv").length == 0) // Append once
+
+          //1. 동적 div 생성
+          $("body").append('<div class="myDiv"><br><br><p>Content1<p><br><br><p>Content2<p><br><br></div>');
+        // 스크롤 액션 추가
+        $(".myDiv").scroll(function(){
+          alert("A1");
+        });
+        
+CSS     
+
+      .myDiv{
+            height: 90px;
+            width: 300px;
+            border: 1px solid;
+            background-color: lavender;
+            overflow: auto;
+        }
+
+            
+
+
+
+
+
+      });
