@@ -38,15 +38,29 @@ highchart정리 (상세 그래프는 highchart demo검색...)
      
    2) series 추가
     
-        chart.addSeries({
-            marker : {
-              enabled : true,
-              radius : 3
-            },
-            data: [216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5]
-        });
+          chart.addSeries({
+              marker : {
+                enabled : true,
+                radius : 3
+              },
+              data: [216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5]
+          });
     
    3) addPoint
    
-        chart.series[1].addPoint('juu',13);
+          chart.series[1].addPoint('juu',13);
+        
+        
+        
+ 체크박스 버튼 만들기
+ (드롭 체크 박스는 미존재)
+ 
+    <div style="position:relative;z-index:1">
+    <span id="searchOrnId" onClick="chiceSelectBox(this);"> 선택</span>
+    <div id="testVal" class="testVal">
+      <c:forEach var="item" items="${ornList}">
+        <input type="checkbox" value="${item.ornId}" class="check" id="${item.ornId}" name="${item.ornNm}"/>${itme.ornNm}<br/>
+      </c:forEach>
+    </div>
+    </div>
 
