@@ -1,7 +1,7 @@
 # -
 흩어져있는 소스들을 정리
 
-highchart정리 (상세 그래프는 highchart demo검색...)
+- highchart정리 (상세 그래프는 highchart demo검색...)
   1. 동적 데이터 추가
      
      1)그래프 선언
@@ -52,7 +52,7 @@ highchart정리 (상세 그래프는 highchart demo검색...)
         
         
         
- 체크박스 버튼 만들기
+- 체크박스 버튼 만들기
  (드롭 체크 박스는 미존재)
  
     <div style="position:relative;z-index:1">
@@ -65,7 +65,7 @@ highchart정리 (상세 그래프는 highchart demo검색...)
     </div>
 
 
-동적div에 스크롤 이벤트 추가 하기
+- 동적div에 스크롤 이벤트 추가 하기
 ※ onClick 이벤트 안에 scroll 액션을 넣어야 정상작동 된다!
 
 HTML
@@ -97,8 +97,3 @@ CSS
 
             
 
-
-
-
-
-      });
